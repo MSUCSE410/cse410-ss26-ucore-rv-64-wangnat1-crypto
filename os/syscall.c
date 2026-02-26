@@ -8,6 +8,7 @@
 #include "vm.h" 
 uint64 sys_write(int fd, uint64 va, uint len)
 {
+	///saueo
 	debugf("sys_write fd = %d va = %x, len = %d", fd, va, len);
 	if (fd != STDOUT)
 		return -1;
