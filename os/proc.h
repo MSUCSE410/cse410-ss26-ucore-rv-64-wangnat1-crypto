@@ -6,7 +6,7 @@
 
 #define NPROC (16)
 #define MAX_SYSCALL_NUM 500
-
+typedef enum procstate TaskStatus;
 // Saved registers for kernel context switches.
 struct context {
 	uint64 ra;
